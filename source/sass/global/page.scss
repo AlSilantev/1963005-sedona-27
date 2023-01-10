@@ -1,0 +1,34 @@
+@import './variables.scss';
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  margin: 0;
+
+  font-family: $main-font-family;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 26px;
+  word-break: break-word;
+  color: $main-font-color;
+
+  background-color: $primary-bg-color;
+  text-align: center;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width: 320px;
+  margin: 0 auto;
+
+  text-align: center;
+
+  background-color: $additional-bg-color;
+}

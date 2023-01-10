@@ -1,0 +1,21 @@
+.hotel-search {
+  padding: 38px 18px 49px;
+
+  &__title {
+    margin-bottom: 16px;
+
+    font-size: 21px;
+    line-height: 26px;
+  }
+
+  &__description {
+    margin-bottom: 32px;
+
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  &__search-buton {
+    padding: 16px;
+  }
+}

@@ -1,0 +1,27 @@
+@import '../global/variables.scss';
+
+.modal-success {
+  display: none;
+  
+  &--open {
+    display: flex;
+  }
+}
+
+.modal-success__inner {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 44px 42px 46px;
+
+  background-color: $additional-bg-color;
+}
+
+.modal-success__button-wrapper {
+  padding: 20px;
+
+  background-color: #f2f2f2;
+}
+
+.modal-success__button {
+  width: 280px;
+}

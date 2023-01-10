@@ -1,0 +1,84 @@
+@import '../global/variables.scss';
+
+.control {
+  position: relative;
+
+  display: flex;
+  box-sizing: border-box;
+  height: 46px;
+  padding-left: 62px;
+
+  text-align: left;
+  align-items: center;
+
+  &:hover .control__mark {
+    background-color: $main-field-bg-color-hover;
+  }
+
+  &:active .control__mark {
+    background-color: #d5d5d5;
+
+    &--radio::before,
+    &--checkbox::before {
+      opacity: 0.3;
+    }
+  }
+
+  &__label {
+    display: block;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    text-transform: none;
+  }
+
+  &__mark {
+    position: absolute;
+    left: 0;
+
+    width: 46px;
+    height: 46px;
+
+    background-color: $main-field-bg-color;
+    border-radius: 4px;
+
+    &--radio {
+      border-radius: 50%;
+    }
+  }
+
+  &__input:checked + .control__mark {
+
+    &--radio::before {
+      $checked-mark-width: 16px;
+      $checked-mark-height: 16px;
+
+      position: absolute;
+      content: "";
+      top: calc(50% - $checked-mark-height / 2);
+      left: calc(50% - $checked-mark-width / 2);
+      
+      width: $checked-mark-width;
+      height: $checked-mark-height;
+
+      background-color: #333333;
+      border-radius: 50%;
+    }
+
+    &--checkbox::before {
+      $checked-mark-width: 22px;
+      $checked-mark-height: 16px;
+
+      position: absolute;
+      content: "";
+      top: calc(50% - $checked-mark-height / 2);
+      left: calc(50% - $checked-mark-width / 2);
+
+      width: $checked-mark-width;
+      height: $checked-mark-height;
+
+      background-image: url("../../img/icons/tick.svg");
+    }
+  }
+}
