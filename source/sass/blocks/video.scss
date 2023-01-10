@@ -1,0 +1,17 @@
+.video {
+  padding: 17px 20px 0;
+
+  &__title {
+    width: 266px;
+    margin-bottom: 24px;
+  }
+
+  &__subtitle {
+    display: block;
+    width: 266px;
+    margin-bottom: 38px;
+
+    font-size: 14px;
+    line-height: 21px;
+  }
+}

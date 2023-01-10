@@ -1,0 +1,63 @@
+@import '../global/variables.scss';
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 24px 0;
+  
+  color: $secondary-font-color;
+
+  &__block {
+    margin: 0;
+    padding: 24px 20px;
+
+    border: none;
+    border-top: $section-border-color 1px solid;
+
+    &--user-feedback {
+      padding-bottom: 56px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__input-container {
+    padding: 0;
+    margin: 0;
+
+    border: none;
+
+    label:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__user-feedback {
+    display: block;
+    box-sizing: border-box;
+    width: 280px;
+    height: 150px;
+    padding: 16px;
+    resize: none;
+
+    border: none;
+  }
+
+  &__submit-button {
+    width: 280px;
+    margin: auto;
+    padding: 16px 40px;
+  }
+
+  &__footnote {
+    display: block;
+    margin: 3px 20px 0 auto;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 21px;
+    color: rgba($color: $main-font-color, $alpha: 0.6);
+  }
+}

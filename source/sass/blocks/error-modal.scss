@@ -1,0 +1,16 @@
+.modal-error {
+  display: none;
+  padding: 45px 42px 35px;
+
+  &--open {
+    display: flex;
+  }
+}
+
+.modal-error__inner {
+  margin-bottom: 28px;
+}
+
+.modal-error__button {
+  width: 180px;
+}

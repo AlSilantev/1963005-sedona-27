@@ -1,1 +1,34 @@
-// Начните писать стили здесь
+// GLOBAL
+@import './global/fonts.scss';
+@import './global/page.scss';
+@import './global/visually-hidden.scss';
+@import './global/img.scss';
+@import './global/sprite.scss';
+@import './global/clear-list.scss';
+@import './global/clear-link.scss';
+@import './global/title.scss';
+@import './global/button.scss';
+@import './global/field.scss';
+
+// BLOCKS
+@import './blocks/main-header.scss';
+@import './blocks/logo.scss';
+@import './blocks/header-navigation.scss';
+@import './blocks/main.scss';
+@import './blocks/reasons.scss';
+@import './blocks/reasons-item.scss';
+@import './blocks/hotel-search.scss';
+@import './blocks/map.scss';
+@import './blocks/footer.scss';
+@import './blocks/social-list.scss';
+@import './blocks/academy-link.scss';
+@import './blocks/feedback-form.scss';
+@import './blocks/field-label.scss';
+@import './blocks/control.scss';
+@import './blocks/galery.scss';
+@import './blocks/photo.scss';
+@import './blocks/video.scss';
+@import './blocks/modal-container.scss';
+
+@import './blocks/error-modal.scss';
+@import './blocks/success-modal.scss';

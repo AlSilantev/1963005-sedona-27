@@ -1,0 +1,29 @@
+@import '../global/variables.scss';
+
+.academy-link {
+  display: flex;
+  width: 128px;
+
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+
+  align-items: center;
+  justify-content: space-between;
+
+  &:hover {
+    color: $main-bg-color;
+
+    svg {
+      fill: $main-bg-color;
+    }
+  }
+
+  &:active {
+    color: #b3b3b3;
+
+    svg {
+      fill: #b3b3b3;
+    }
+  }
+}

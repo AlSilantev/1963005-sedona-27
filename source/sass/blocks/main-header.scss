@@ -1,0 +1,12 @@
+@import '../global/variables.scss';
+
+.main-header {
+  position: relative;
+
+  display: flex;
+  padding: 16px 20px;
+
+  background-color: $additional-bg-color;
+
+  align-items: center;
+}

@@ -1,0 +1,31 @@
+@import "../global/variables.scss";
+
+.field {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 16px;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: $secondary-font-color;
+
+  background-color: $main-field-bg-color;
+  outline: none;
+  border: none;
+
+  &:hover {
+    background-color: $main-field-bg-color-hover;
+  }
+
+  &:focus {
+    background-color: $additional-bg-color;
+    outline: 4px solid #E5E5E5;
+    outline-offset: -4px;
+  }
+
+  &::placeholder {
+    color: rgba($color: $secondary-font-color, $alpha: 0.3);
+  }
+}

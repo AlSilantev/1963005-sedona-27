@@ -1,0 +1,17 @@
+@import '../global/variables.scss';
+
+.galery {
+  display: flex;
+  flex-direction: column;
+
+  border-top: $section-border-color 1px solid;
+
+  &__item {
+    display: flex;
+    flex-direction: column-reverse;
+
+    padding: 24px 20px 25px;
+
+    border-bottom: $section-border-color 1px solid;
+  }
+}
