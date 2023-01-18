@@ -1,7 +1,77 @@
-.header-navigation {
-  margin-left: auto;
+.header-navigation__list {
+  display: flex;
+  width: 100%;
 
-  &__button {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.header-navigation__link {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: $tablet-width) {
+  .header-navigation {
+    width: 100%;
+    margin: 0;
+  }
+
+  .header-navigation__button {
+    display: none;
+  }
+
+  .header-navigation__list {
+
+
+    font-size: 14px;
+    line-height: 21px;
+    color: $secondary-font-color;
+
+    background-color: transparent;
+
+    justify-content: space-between;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .header-navigation__item {
+    width: 25%;
+
+    &:nth-child(4n + 2) {
+      margin-right: 25%;
+    }
+  }
+
+  .header-navigation__link {
+    box-sizing: border-box;
+
+    padding: 18px 0 17px;
+
+    &--current-page {
+      color: #766357;
+    }
+
+    &:hover {
+      color: #81b3d2
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .header-navigation {
+    margin-left: auto;
+  }
+
+  .header-navigation__button {
     position: relative;
     z-index: 3;
 
@@ -27,19 +97,15 @@
     }
   }
 
-  &__list {
-    z-index: 2;
-
+  .header-navigation__list {
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 2;
 
     display: none;
-    width: 100%;
 
-    font-weight: 700;
     font-size: 18px;
-    text-transform: uppercase;
     color: $secondary-font-color-white;
 
     background-color: $main-button-bg-color;
@@ -57,7 +123,7 @@
     }
   }
 
-  &__item {
+  .header-navigation__item {
     margin-bottom: 1px;
 
     box-shadow:
@@ -73,13 +139,9 @@
     }
   }
 
-  &__link {
-    display: flex;
+  .header-navigation__link {
     width: 100%;
     height: 55px;
-
-    align-items: center;
-    justify-content: center;
 
     &:hover {
       background-color: $main-button-bg-color-hover;
@@ -90,3 +152,9 @@
     }
   }
 }
+
+// @media (min-width: $desktop-width) {
+//   .header-navigation__item {
+//     width: ;
+//   }
+// }

@@ -27,7 +27,7 @@
       margin-bottom: 37px;
     }
 
-    @media (min-width: $mobile-width) and (max-width: $tablet-width) {
+    @media (min-width: $mobile-width) and (max-width: calc($tablet-width - 1px)) {
       width: 100%;
 
       background-image: url('../../img/back-mobile.jpg');
