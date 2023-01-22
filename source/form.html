@@ -4,6 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/32.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <script defer src="js/app.js"></script>
     <title>HTML Academy: Седона</title>
   </head>
@@ -147,7 +151,9 @@
                     Контактный телефон*:
                   </span>
 
-                  <input class="feedback-form__field field" type="tel" name="user-tel-number" placeholder="Введите телефон" required>
+                  <div class="feedback-form__field-wrapper feedback-form__field-wrapper--phone">
+                    <input class="feedback-form__field feedback-form__field--phone field" type="tel" name="user-tel-number" placeholder="Введите телефон" required>
+                  </div>
                 </label>
 
                 <label class="feedback-form__field-label field-label">
@@ -155,7 +161,9 @@
                     Электронная почта*:
                   </span>
 
-                  <input class="feedback-form__field field" type="email" name="user-email" placeholder="Введите e-mail" required>
+                  <div class="feedback-form__field-wrapper feedback-form__field-wrapper--email">
+                    <input class="feedback-form__field feedback-form__field--email field" type="email" name="user-email" placeholder="Введите e-mail" required>
+                  </div>
                 </label>
               </fieldset>
             </section>
@@ -288,7 +296,7 @@
         </a>
       </footer>
 
-      <div class="modal-container modal-container--open">
+      <div class="modal-container">
         <!-- Сообщение с ошибкой отправки данных -->
         <section class="modal-error modal-container__modal">
           <div class="modal-error__inner">
@@ -307,7 +315,7 @@
         </section>
 
         <!-- Сообщение об успешной отправке данных -->
-        <section class="modal-success modal-container__modal modal-success--open">
+        <section class="modal-success modal-container__modal">
           <div class="modal-success__inner">
             <h2 class="modal-success__title modal-container__title title">
               Ваш отзыв отправлен!
