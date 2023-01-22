@@ -6,13 +6,14 @@
 
   font-size: 14px;
   line-height: 21px;
- 
+
   align-items: flex-start;
-
-  &__label {
-    display: block;
-    margin-left: 16px;
-
-    color: $main-font-color;
-  }
 }
+
+.field-label__label {
+  display: block;
+  margin-left: 16px;
+
+  color: $main-font-color;
+}
+

@@ -4,60 +4,220 @@
   display: flex;
   flex-direction: column;
   margin: 0 0 24px 0;
-  
+
   color: $secondary-font-color;
+}
 
-  &__block {
-    margin: 0;
-    padding: 24px 20px;
+.feedback-form__block {
+  margin: 0;
+  padding: 24px 20px;
 
+  border: none;
+  border-top: $section-border-color 1px solid;
+
+  &--user-feedback {
+    padding-bottom: 56px;
+  }
+}
+
+.feedback-form__title {
+  margin-bottom: 20px;
+}
+
+.feedback-form__input-container {
+  padding: 0;
+  margin: 0;
+
+  border: none;
+
+  label:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+
+.feedback-form__user-feedback {
+  display: block;
+  box-sizing: border-box;
+  width: 280px;
+  height: 150px;
+  padding: 16px;
+  resize: none;
+
+  border: none;
+}
+
+.feedback-form__submit-button {
+  width: 280px;
+  margin: auto;
+  padding: 16px 40px;
+}
+
+.feedback-form__footnote {
+  display: block;
+  margin: 3px 20px 0 auto;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 21px;
+  color: rgba($color: $main-font-color, $alpha: 0.6);
+}
+
+@media (min-width: $tablet-width) {
+  .feedback-form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 64px;
+    padding: 0 60px;
+  }
+
+  .feedback-form__block {
     border: none;
-    border-top: $section-border-color 1px solid;
+    margin-bottom: 60px;
+    padding: 0;
+
+    &:first-child {
+      width: 280px;
+      margin-right: 26px;
+      padding: 0 43px 15px 0;
+
+      border-right: $section-border-color 1px solid;
+    }
+
+    &:nth-child(2) {
+      width: 298px;
+    }
+
+    &:nth-child(2) .feedback-form__input-container {
+      width: 280px;
+
+      margin-left: auto;
+    }
+
+    &:nth-child(3),
+    &:nth-child(4),
+    &:nth-child(5) {
+      flex-grow: 1;
+      border-top: $section-border-color 1px solid;
+
+      .feedback-form__title {
+        width: 402px;
+        margin-top: -0.75em;
+        margin-right: auto;
+        margin-left: auto;
+
+        background-color: $additional-bg-color;
+      }
+    }
+
+    &:nth-child(4) {
+      .feedback-form__title {
+        margin-top: -1em;
+      }
+    }
+  }
+
+  .feedback-form__title {
+    margin-bottom: 28px;
+
+    font-size: 21px;
+    line-height: 26px;
+  }
+
+  .feedback-form__block {
+    &--user-impression .feedback-form__input-container,
+    &--user-visited-places .feedback-form__input-container {
+      display: grid;
+      grid-template-columns: repeat(2, 280px);
+      grid-auto-flow: row;
+      gap: 16px;
+      margin: auto;
+
+      & label:not(:last-child) {
+        margin: 0;
+      }
+    }
+
+    &--user-impression .feedback-form__input-container {
+      width: 575px;
+    }
 
     &--user-feedback {
-      padding-bottom: 56px;
+      margin-bottom: 48px;
+    }
+
+    &--user-visited-places .feedback-form__input-container {
+      grid-template-columns: repeat(2, 224px);
+      gap: 32px 16px;
+      width: 480px;
     }
   }
 
-  &__title {
-    margin-bottom: 20px;
+  .feedback-form__user-feedback {
+    width: 100%;
   }
 
-  &__input-container {
-    padding: 0;
-    margin: 0;
+  .feedback-form__submit-button {
+    width: 324px;
+    margin-left: 0;
+  }
 
-    border: none;
+  .feedback-form__footnote {
+    margin: auto 0 auto auto;
 
-    label:not(:last-child) {
-      margin-bottom: 16px;
+    font-size: 14px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback-form {
+    padding: 0 120px;
+  }
+
+  .feedback-form__block {
+    margin-bottom: 68px;
+
+    &:first-child {
+      width: 430px;
+      margin-right: 64px;
+      padding-right: 63px;
+    }
+
+    &:nth-child(2) .feedback-form__title {
+      width: 278px;
+      margin-left: 28px;
+    }
+
+    &:nth-child(2) .feedback-form__input-container {
+      width: 402px;
     }
   }
 
-  &__user-feedback {
-    display: block;
-    box-sizing: border-box;
-    width: 280px;
-    height: 150px;
-    padding: 16px;
-    resize: none;
+  .feedback-form__block {
+    &--user-impression .feedback-form__input-container {
+      grid-template-columns: repeat(3, 280px);
+      gap: 28px;
+    }
 
-    border: none;
+    &--user-visited-places .feedback-form__input-container {
+      box-sizing: border-box;
+      display: flex;
+      gap: 64px;
+      width: 960px;
+      padding: 31px 44px;
+    }
   }
 
-  &__submit-button {
-    width: 280px;
+  .feedback-form__user-feedback {
+    width: 768px;
     margin: auto;
-    padding: 16px 40px;
   }
 
-  &__footnote {
-    display: block;
-    margin: 3px 20px 0 auto;
+  .feedback-form__submit-button {
+    width: 384px;
+    margin-left: 96px;
+  }
 
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 21px;
-    color: rgba($color: $main-font-color, $alpha: 0.6);
+  .feedback-form__footnote {
+    margin-right: 96px;
   }
 }

@@ -2,7 +2,7 @@
 
 .modal-success {
   display: none;
-  
+
   &--open {
     display: flex;
   }
@@ -17,11 +17,38 @@
 }
 
 .modal-success__button-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
   padding: 20px;
 
   background-color: #f2f2f2;
+
+  align-items: center;
+  justify-content: center;
 }
 
 .modal-success__button {
   width: 280px;
+}
+
+@media (min-width: $tablet-width) {
+  .modal-success {
+    width: 640px;
+  }
+
+  .modal-success__inner {
+    padding: 57px 114px 48px;
+  }
+
+  .modal-success__button-wrapper {
+    width: 100%;
+    padding: 44px 0;
+  }
+
+  .modal-success__button {
+    width: 458px;
+
+    font-size: 21px;
+  }
 }

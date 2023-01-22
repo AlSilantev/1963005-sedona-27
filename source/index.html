@@ -116,11 +116,17 @@
                   </span>
 
                   <p class="reasons-item__description">
-                    Седона — не аттракцион для туристов, там течёт своя жизнь
+                    Седона — не аттракцион для туристов, там&nbsp;течёт своя жизнь
                   </p>
                 </div>
 
-                <img class="reasons-item__image" src="./img/sedona-street.jpg" width="320" height="260" alt="Улица Седоны.">
+                <div class="reasons-item__image-wrapper">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/sedona-street-desktop.jpg 1x, img/sedona-street-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/sedona-street-tablet.jpg 1x, img/sedona-street-tablet@2x.jpg 2x">
+                    <img class="reasons-item__image" src="./img/sedona-street.jpg" srcset="img/sedona-street@2x.jpg 2x" width="320" height="260" alt="Улица Седоны.">
+                  </picture>
+                </div>
               </li>
 
               <li class="reasons__item reasons-item reasons-item--suggestion reasons-item--housing">
@@ -174,7 +180,13 @@
                   </p>
                 </div>
 
-                <img class="reasons-item__image" src="./img/devils-bridge.jpg" alt="Каньон Седоны.">
+                <div class="reasons-item__image-wrapper">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/devils-bridge-desktop.jpg 1x, img/devils-bridge-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/devils-bridge-tablet.jpg 1x, img/devils-bridge-tablet@2x.jpg 2x">
+                    <img class="reasons-item__image" src="./img/devils-bridge.jpg" srcset="img/devils-bridge@2x.jpg 2x" width="320" height="260" alt="Каньон Седоны.">
+                  </picture>
+                </div>
               </li>
 
               <li class="reasons__item reasons-item reasons-item--advantage">
@@ -232,7 +244,7 @@
           </h2>
 
           <p class="hotel-search__description">
-            Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
+            Укажите предполагаемые даты поездки, и&nbsp;мы&nbsp;покажем&nbsp;вам&nbsp;лучшие предложения гостиниц в Седоне
           </p>
 
           <a class="hotel-search__search-buton button clear-link">

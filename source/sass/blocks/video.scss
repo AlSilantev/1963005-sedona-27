@@ -1,17 +1,47 @@
+@import '../global/variables.scss';
+
 .video {
   padding: 17px 20px 0;
+}
 
-  &__title {
-    width: 266px;
-    margin-bottom: 24px;
+.video__title {
+  width: 266px;
+  margin-bottom: 24px;
+}
+
+.video__subtitle {
+  display: block;
+  width: 266px;
+  margin-bottom: 38px;
+
+  font-size: 14px;
+  line-height: 21px;
+}
+
+@media (min-width: $tablet-width) {
+  .video {
+    display: flex;
+    flex-direction: column;
+
+    padding: 58px 0 40px;
+
+    align-items: center;
   }
 
-  &__subtitle {
-    display: block;
-    width: 266px;
-    margin-bottom: 38px;
+  .video__title {
+    width: 445px;
 
-    font-size: 14px;
-    line-height: 21px;
+    font-size: 30px;
+    line-height: 26px;
+  }
+
+  .video__subtitle {
+    width: 445px;
+    margin-bottom: 87px;
+  }
+
+  .video__video {
+    width: 100%;
   }
 }
+

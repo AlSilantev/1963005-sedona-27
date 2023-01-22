@@ -1,22 +1,32 @@
 @import '../global/variables.scss';
 
-.reasons {
-  position: relative;
+.reasons__list {
+  display: flex;
+  flex-direction: column;
 
-  &::before {
-    position: absolute;
-    top: -16px;
-    left: 0;
+  background-color: $reasons-list-bg-color;
+}
 
-    width: 100%;
 
-    content: url('../../img/reasons-back-plug.svg');
+@media (max-width: calc($tablet-width - 1px)) {
+  .reasons {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      top: -16px;
+      left: 0;
+
+      width: 100%;
+
+      content: url('../../img/reasons-back-plug.svg');
+    }
   }
+}
 
-  &__list {
-    display: flex;
-    flex-direction: column;
-
-    background-color: $reasons-list-bg-color;
+@media (min-width: $tablet-width) {
+  .reasons__list {
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
