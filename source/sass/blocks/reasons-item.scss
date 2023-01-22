@@ -1,41 +1,6 @@
 @import '../global/variables.scss';
 
 .reasons-item {
-
-  &__title {
-    font-size: 18px;
-    line-height: 26px;
-
-    margin-bottom: 11px;
-  }
-
-  &__description,
-  &__number {
-    font-size: 14px;
-    line-height: 21px;
-  }
-
-  &__description {
-    margin: 0;
-  }
-
-  &__number {
-    display: block;
-    margin-bottom: 17px;
-  }
-
-  &__image {
-    display: block;
-    height: 260px;
-    object-fit: cover;
-  }
-
-  &__info {
-    width: 284px;
-    box-sizing: border-box;
-    margin: auto;
-  }
-
   &--wide {
     color: $secondary-font-color-white;
 
@@ -43,12 +8,6 @@
 
     .reasons-item__info {
       padding: 37px 18px;
-    }
-  }
-
-  &:first-child {
-    .reasons-item__info {
-      padding: 54px 0 40px;
     }
   }
 
@@ -87,6 +46,7 @@
 
   &--souvenirs {
     padding-bottom: 46px;
+
     .reasons-item__info {
       background-image: url('../../img/icons/icon-souvenir.svg');
     }
@@ -98,11 +58,194 @@
     .reasons-item__info {
       padding: 24px 8px;
     }
+  }
+}
 
-    &:not(:last-child) {
+.reasons-item__info {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+
+  align-items: center;
+}
+
+.reasons-item__title {
+  font-size: 18px;
+  line-height: 26px;
+
+  margin-bottom: 11px;
+}
+
+.reasons-item__description,
+.reasons-item__number {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.reasons-item__description {
+  margin: 0;
+}
+
+.reasons-item__number {
+  display: block;
+  margin-bottom: 17px;
+}
+
+.reasons-item__image-wrapper {
+  width: 320px
+}
+
+.reasons-item__image {
+  display: block;
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+}
+
+.reasons-item__info {
+  width: 284px;
+  margin: auto;
+}
+
+@media (max-width: calc($tablet-width - 1px)) {
+  .reasons-item {
+    &:first-child {
       .reasons-item__info {
+        padding: 54px 0 40px;
+      }
+    }
+
+    &--advantage {
+      &:not(:last-child) .reasons-item__info {
         border-bottom: 1px solid #d6d6d6;
       }
     }
   }
 }
+
+@media (min-width: $tablet-width) {
+  .reasons-item {
+    &--wide {
+      display: flex;
+      flex-wrap: wrap;
+
+      .reasons-item__info {
+        padding: 52px 33px 31px;
+      }
+
+      .reasons-item__title {
+        width: 150px;
+      }
+    }
+
+    &:nth-child(5n) {
+      flex-direction: row-reverse;
+    }
+
+    &--suggestion {
+      padding: 0;
+      margin: 0;
+
+      text-align: center;
+
+      .reasons-item__info {
+        padding: 158px 33px 60px;
+      }
+    }
+
+    &--housing {
+      .reasons-item__info {
+        background-size: 77px 72px;
+        background-position: center 60px;
+      }
+    }
+
+    &--food {
+      .reasons-item__info {
+        background-size: 80px 68px;
+        background-position: center 62px;
+      }
+    }
+
+    &--souvenirs {
+      .reasons-item__info {
+        background-size: 66px 75px;
+        background-position: center 64px;
+      }
+    }
+
+    &--advantage {
+      padding: 0;
+      text-align: center;
+
+      .reasons-item__info {
+        padding: 52px 33px;
+      }
+    }
+  }
+
+  .reasons-item__info {
+    width: 256px;
+    margin: 0;
+    padding: 52px 33px 31px;
+  }
+
+  .reasons-item__title {
+    width: 140px;
+
+    font-size: 21px;
+    line-height: 26px;
+  }
+
+  .reasons-item__image-wrapper {
+    width: 512px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reasons-item {
+    &--suggestion {
+
+      .reasons-item__info {
+        padding: 169px 50px 69px;
+      }
+    }
+
+    &--housing {
+      .reasons-item__info {
+        background-size: 79px 72px;
+        background-position: center 69px;
+      }
+    }
+
+    &--food {
+      .reasons-item__info {
+        background-size: 73px 69px;
+        background-position: center 72px;
+      }
+    }
+
+    &--souvenirs {
+      .reasons-item__info {
+        background-size: 77px 75px;
+        background-position: center 69px;
+      }
+    }
+
+    &--advantage {
+      .reasons-item__info {
+        padding: 64px 50px 40px;
+      }
+    }
+  }
+
+  .reasons-item__info {
+    width: 400px;
+    padding: 52px 50px 51px;
+  }
+
+  .reasons-item__image-wrapper {
+    width: 800px;
+  }
+}
+

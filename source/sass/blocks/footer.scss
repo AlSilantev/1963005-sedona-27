@@ -1,16 +1,38 @@
+@import '../global/variables.scss';
+
 .page-footer {
   display: flex;
   flex-direction: column;
   padding: 28px 0 23px;
 
   align-items: center;
-  
-  &__hashtag-tagline {
-    margin-bottom: 32px;
-    
-    font-weight: 700;
-    font-size: 21px;
-    line-height: 26px;
-    text-transform: uppercase;
+}
+
+.page-footer__hashtag-tagline {
+  margin-bottom: 32px;
+
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    flex-direction: row;
+    padding: 36px 68px;
+
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .page-footer__hashtag-tagline {
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    padding: 36px 128px;
   }
 }
