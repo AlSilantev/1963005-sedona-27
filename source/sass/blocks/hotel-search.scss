@@ -9,7 +9,7 @@
 }
 
 .hotel-search__title {
-  margin-bottom: 16px;
+  margin-bottom: 24px;
 
   font-size: 21px;
   line-height: 26px;
@@ -35,7 +35,7 @@
   }
 
   .hotel-search__title {
-    margin-bottom: 24px;
+    margin-bottom: 32px;
 
     font-size: 30px;
     line-height: 26px;
@@ -46,6 +46,11 @@
   }
 }
 
-@media (min-width: $tablet-width) {
-
+@media (min-width: $desktop-width) {
+  .hotel-search {
+    padding: 61px 0 66px;
+  }
+  .hotel-search__description {
+    margin-bottom: 45px;
+  }
 }

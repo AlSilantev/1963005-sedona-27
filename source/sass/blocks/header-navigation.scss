@@ -24,8 +24,6 @@
   }
 
   .header-navigation__list {
-
-
     font-size: 14px;
     line-height: 21px;
     color: $secondary-font-color;
@@ -40,15 +38,20 @@
   }
 
   .header-navigation__item {
-    width: 25%;
+    display: flex;
+    width: 20%;
+
+    align-items: center;
+    justify-content: center;
 
     &:nth-child(4n + 2) {
-      margin-right: 25%;
+      margin-right: 20%;
     }
   }
 
   .header-navigation__link {
     box-sizing: border-box;
+    width: 100%;
 
     padding: 18px 0 17px;
 

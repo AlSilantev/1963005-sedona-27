@@ -10,13 +10,13 @@
   display: flex;
   box-sizing: border-box;
   width: 100%;
-  margin-bottom: 32px;
+  margin-bottom: 36px;
 
   background-size: cover;
   background-position: center bottom;
   background-repeat: no-repeat;
   background-color: $secondary-bg-color;
-  background-image: url('../../img/back-mobile.jpg');
+  background-image: url('../../img/back-mobile-index.jpg');
 
   align-items: center;
   justify-content: center;
@@ -26,11 +26,21 @@
   }
 
   &--galery {
-    margin-bottom: 37px;
+    margin-bottom: 38px;
   }
 
   @media (min-resolution: 2dppx) {
-    background-image: url('../../img/back-mobile@2x.jpg');
+    background-image: url('../../img/back-mobile-index@2x.jpg');
+  }
+
+  &--form,
+  &--galery {
+    background-size: auto;
+    background-image: url('../../img/back-mobile.jpg');
+
+    @media (min-resolution: 2dppx) {
+      background-image: url('../../img/back-mobile-@2x.jpg');
+    }
   }
 }
 
@@ -39,7 +49,7 @@
 
   &--form,
   &--galery {
-    padding: 52px 0 67px;
+    padding: 53px 0 67px;
   }
 }
 
@@ -62,6 +72,15 @@
 
   font-size: 18px;
   line-height: 26px;
+  color: $secondary-font-color;
+
+  &--form {
+    margin-bottom: 24px;
+  }
+
+  &--galery {
+    margin-bottom: 26px;
+  }
 }
 
 .main__subtitle {
@@ -78,13 +97,13 @@
   }
 
   &--galery {
-    margin-bottom: 48px;
+    margin-bottom: 36px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .main__background {
-    margin-bottom: 48px;
+    margin-bottom: 20px;
 
     background-image: url('../../img/back-desktop.jpg');
 
@@ -113,6 +132,21 @@
     }
   }
 
+  .main__title {
+    font-size: 21px;
+    margin-bottom: 30px;
+
+    &--form,
+    &--galery {
+      font-size: 30px;
+      margin-bottom: 22px;
+    }
+
+    &--galery {
+      margin-bottom: 32px;
+    }
+  }
+
   .main__title,
   .main__subtitle {
     width: 484px;
@@ -127,23 +161,26 @@
   }
 
   .main__subtitle {
-    margin-bottom: 56px;
+    margin-bottom: 82px;
 
     &--form {
       margin-bottom: 102px;
+
+      line-height: 23px;
     }
 
     &--galery {
-      margin-bottom: 88px;
+      margin-bottom: 80px;
     }
   }
 }
 
 @media (min-width: $desktop-width) {
   .main__background {
-    margin-bottom: 59px;
+    margin-bottom: 32px;
 
     &--form {
+      height: 300px;
       margin-bottom: 115px;
     }
 
@@ -152,15 +189,27 @@
     }
   }
 
+  .main__welcome-tagline {
+    &--galery {
+      padding: 100px 0 120px;
+    }
+  }
+
+  .main__title {
+    &--form {
+      margin-bottom: 30px;
+    }
+  }
+
   .main__subtitle {
-    margin-bottom: 44px;
+    margin-bottom: 71px;
 
     &--form {
       margin-bottom: 67px;
     }
 
     &--galery {
-      margin-bottom: 86px;
+      margin-bottom: 90px;
     }
   }
 }

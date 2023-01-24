@@ -7,7 +7,7 @@
     background-color: $main-bg-color;
 
     .reasons-item__info {
-      padding: 37px 18px;
+      padding: 37px 10px;
     }
   }
 
@@ -56,7 +56,7 @@
     padding: 0 18px;
 
     .reasons-item__info {
-      padding: 24px 8px;
+      padding: 24px 16px;
     }
   }
 }
@@ -69,11 +69,17 @@
   align-items: center;
 }
 
+.reasons-item {
+  &--suggestion .reasons-item__info {
+    align-items: flex-start;
+  }
+}
+
 .reasons-item__title {
   font-size: 18px;
   line-height: 26px;
 
-  margin-bottom: 11px;
+  margin-bottom: 12px;
 }
 
 .reasons-item__description,
@@ -111,7 +117,7 @@
   .reasons-item {
     &:first-child {
       .reasons-item__info {
-        padding: 54px 0 40px;
+        padding: 54px 2px 40px;
       }
     }
 
@@ -130,11 +136,21 @@
       flex-wrap: wrap;
 
       .reasons-item__info {
+        height: 256px;
         padding: 52px 33px 31px;
       }
 
       .reasons-item__title {
         width: 150px;
+        margin-bottom: 14px;
+      }
+
+      .reasons-item__number {
+        margin-bottom: 22px;
+      }
+
+      .reasons-item__image {
+        height: 256px;
       }
     }
 
@@ -149,28 +165,35 @@
       text-align: center;
 
       .reasons-item__info {
-        padding: 158px 33px 60px;
+        padding: 156px 33px 60px;
+
+        align-items: center;
+      }
+
+      .reasons-item__title {
+        padding: 0;
+        margin-bottom: 24px;
       }
     }
 
     &--housing {
       .reasons-item__info {
-        background-size: 77px 72px;
-        background-position: center 60px;
+        background-size: 82px 76px;
+        background-position: center 58px;
       }
     }
 
     &--food {
       .reasons-item__info {
-        background-size: 80px 68px;
-        background-position: center 62px;
+        background-size: 100px 79px;
+        background-position: center 58px;
       }
     }
 
     &--souvenirs {
       .reasons-item__info {
-        background-size: 66px 75px;
-        background-position: center 64px;
+        background-size: 80px 90px;
+        background-position: center 58px;
       }
     }
 
@@ -180,6 +203,10 @@
 
       .reasons-item__info {
         padding: 52px 33px;
+      }
+
+      .reasons-item__number {
+        margin-bottom: 25px;
       }
     }
   }
@@ -194,7 +221,7 @@
     width: 140px;
 
     font-size: 21px;
-    line-height: 26px;
+    line-height: 27px;
   }
 
   .reasons-item__image-wrapper {
@@ -204,8 +231,19 @@
 
 @media (min-width: $desktop-width) {
   .reasons-item {
-    &--suggestion {
+    &--wide {
+      .reasons-item__info {
+        padding: 52px 67px;
+      }
+    }
 
+    &:nth-child(5) {
+      .reasons-item__info {
+        padding: 52px 93px;
+      }
+    }
+
+    &--suggestion {
       .reasons-item__info {
         padding: 169px 50px 69px;
       }
@@ -213,28 +251,38 @@
 
     &--housing {
       .reasons-item__info {
-        background-size: 79px 72px;
-        background-position: center 69px;
+        background-size: 88px 78px;
+        background-position: center 65px;
       }
     }
 
     &--food {
       .reasons-item__info {
-        background-size: 73px 69px;
-        background-position: center 72px;
+        background-size: 100px 75px;
+        background-position: center 68px;
       }
     }
 
     &--souvenirs {
       .reasons-item__info {
-        background-size: 77px 75px;
-        background-position: center 69px;
+        background-size: 90px 90px;
+        background-position: center 60px;
+      }
+
+      .reasons-item__description {
+        span {
+          display: block;
+        }
       }
     }
 
     &--advantage {
       .reasons-item__info {
-        padding: 64px 50px 40px;
+        padding: 62px 50px 40px;
+      }
+
+      .reasons-item__number {
+        margin-bottom: 23px;
       }
     }
   }

@@ -6,6 +6,7 @@
   padding: 28px 0 23px;
 
   align-items: center;
+  
 }
 
 .page-footer__hashtag-tagline {
@@ -15,6 +16,7 @@
   font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
+  color: $secondary-font-color;
 }
 
 @media (min-width: $tablet-width) {
@@ -33,6 +35,6 @@
 
 @media (min-width: $desktop-width) {
   .page-footer {
-    padding: 36px 128px;
+    padding: 36px 120px;
   }
 }
