@@ -1,12 +1,17 @@
 @import '../global/variables.scss';
 
 .video {
+  display: flex;
+  flex-direction: column;
   padding: 17px 20px 0;
+
+  align-items: center;
 }
 
 .video__title {
   width: 266px;
-  margin-bottom: 24px;
+  margin-bottom: 26px;
+  color: $secondary-font-color;
 }
 
 .video__subtitle {
@@ -18,18 +23,18 @@
   line-height: 21px;
 }
 
+.video__video {
+  display: block;
+}
+
 @media (min-width: $tablet-width) {
   .video {
-    display: flex;
-    flex-direction: column;
-
-    padding: 58px 0 40px;
-
-    align-items: center;
+    padding: 54px 0 40px;
   }
 
   .video__title {
     width: 445px;
+    margin-bottom: 32px;
 
     font-size: 30px;
     line-height: 26px;
@@ -42,6 +47,14 @@
 
   .video__video {
     width: 100%;
+    height: 500px;
+    object-fit: cover;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video {
+    padding: 62px 200px 80px;
   }
 }
 

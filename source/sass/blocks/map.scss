@@ -1,7 +1,16 @@
 @import '../global/variables.scss';
 
 .map {
+  display: flex;
   margin-bottom: 10px;
+
+  align-items: center;
+  justify-content: center;
+
+  iframe {
+    width: 100%;
+    display: block;
+  }
 }
 
 @media (min-width: $tablet-width) {
