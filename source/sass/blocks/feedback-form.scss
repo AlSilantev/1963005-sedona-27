@@ -1,4 +1,4 @@
-@import '../global/variables.scss';
+@import "../global/variables.scss";
 
 .feedback-form {
   display: flex;
@@ -67,13 +67,13 @@
 
   &--email {
     &::after {
-      background-image: url('../../img/icons/icon-mail.svg');
+      background-image: url("../../img/mail.svg");
     }
   }
 
   &--phone {
     &::after {
-      background-image: url('../../img/icons/icon-phone.svg');
+      background-image: url("../../img/phone.svg");
     }
   }
 }
@@ -125,6 +125,41 @@
     margin-bottom: 62px;
     padding: 0;
 
+    &--user-impression .feedback-form__input-container,
+    &--user-visited-places .feedback-form__input-container {
+      display: grid;
+      grid-template-columns: repeat(2, 280px);
+      grid-auto-flow: row;
+      gap: 16px;
+      margin: auto;
+
+      & label:not(:last-child) {
+        margin: 0;
+      }
+    }
+
+    &--user-impression .feedback-form__input-container {
+      width: 575px;
+    }
+
+    &--user-visited-places {
+      margin-bottom: 56px;
+
+      .feedback-form__title {
+        margin-top: -1.25em;
+      }
+    }
+
+    &--user-feedback {
+      margin-bottom: 48px;
+    }
+
+    &--user-visited-places .feedback-form__input-container {
+      grid-template-columns: repeat(2, 224px);
+      gap: 16px 32px;
+      width: 480px;
+    }
+
     &--user-name {
       width: 280px;
       margin-right: 26px;
@@ -170,12 +205,6 @@
     &--user-impression {
       margin-bottom: 75px;
     }
-
-    &--user-visited-places {
-      .feedback-form__title {
-        margin-top: -1.25em;
-      }
-    }
   }
 
   .feedback-form__title {
@@ -183,39 +212,6 @@
 
     font-size: 21px;
     line-height: 26px;
-  }
-
-  .feedback-form__block {
-    &--user-impression .feedback-form__input-container,
-    &--user-visited-places .feedback-form__input-container {
-      display: grid;
-      grid-template-columns: repeat(2, 280px);
-      grid-auto-flow: row;
-      gap: 16px;
-      margin: auto;
-
-      & label:not(:last-child) {
-        margin: 0;
-      }
-    }
-
-    &--user-impression .feedback-form__input-container {
-      width: 575px;
-    }
-
-    &--user-visited-places {
-      margin-bottom: 56px;
-    }
-
-    &--user-feedback {
-      margin-bottom: 48px;
-    }
-
-    &--user-visited-places .feedback-form__input-container {
-      grid-template-columns: repeat(2, 224px);
-      gap: 16px 32px;
-      width: 480px;
-    }
   }
 
   .feedback-form__user-feedback {

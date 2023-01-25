@@ -1,4 +1,4 @@
-@import '../global/variables.scss';
+@import "../global/variables.scss";
 
 .control {
   position: relative;
@@ -50,7 +50,6 @@
 }
 
 .control__input:checked + .control__mark {
-
   &--radio::before {
     $checked-mark-width: 16px;
     $checked-mark-height: 16px;
@@ -79,7 +78,6 @@
     width: $checked-mark-width;
     height: $checked-mark-height;
 
-    background-image: url("../../img/icons/tick.svg");
+    background-image: url("../../img/tick.svg");
   }
 }
-

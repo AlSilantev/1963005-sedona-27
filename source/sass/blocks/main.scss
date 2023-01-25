@@ -1,4 +1,4 @@
-@import '../global/variables.scss';
+@import "../global/variables.scss";
 
 .main {
   text-transform: uppercase;
@@ -16,7 +16,7 @@
   background-position: center bottom;
   background-repeat: no-repeat;
   background-color: $secondary-bg-color;
-  background-image: url('../../img/back-mobile-index.jpg');
+  background-image: url("../../img/back-mobile-index.jpg");
 
   align-items: center;
   justify-content: center;
@@ -30,16 +30,16 @@
   }
 
   @media (min-resolution: 2dppx) {
-    background-image: url('../../img/back-mobile-index@2x.jpg');
+    background-image: url("../../img/back-mobile-index@2x.jpg");
   }
 
   &--form,
   &--galery {
     background-size: auto;
-    background-image: url('../../img/back-mobile.jpg');
+    background-image: url("../../img/back-mobile.jpg");
 
     @media (min-resolution: 2dppx) {
-      background-image: url('../../img/back-mobile-@2x.jpg');
+      background-image: url("../../img/back-mobile-@2x.jpg");
     }
   }
 }
@@ -62,7 +62,7 @@
   background-size: cover;
   background-position: center bottom;
   background-repeat: no-repeat;
-  background-image: url('../../img/back-plug.svg');
+  background-image: url("../../img/back-plug.svg");
 }
 
 .main__title {
@@ -105,7 +105,7 @@
   .main__background {
     margin-bottom: 20px;
 
-    background-image: url('../../img/back-desktop.jpg');
+    background-image: url("../../img/back-desktop.jpg");
 
     &--form {
       margin-bottom: 64px;
@@ -116,7 +116,7 @@
     }
 
     @media (min-resolution: 2dppx) {
-      background-image: url('../../img/back-desktop@2x.jpg');
+      background-image: url("../../img/back-desktop@2x.jpg");
     }
   }
 
