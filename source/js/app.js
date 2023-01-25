@@ -21,4 +21,3 @@ const closeNavigationMenu = () => {
 }
 
 openMenuButton.addEventListener('click', openNavigationMenu);
-

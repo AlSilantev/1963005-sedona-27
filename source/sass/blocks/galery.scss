@@ -1,4 +1,4 @@
-@import '../global/variables.scss';
+@import "../global/variables.scss";
 
 .galery {
   display: flex;
@@ -15,7 +15,6 @@
 
   border-bottom: $section-border-color 1px solid;
 }
-
 
 @media (min-width: $tablet-width) {
   .galery {
@@ -40,7 +39,7 @@
   .galery {
     padding: 0;
   }
-  
+
   .galery__photo-list {
     grid-template-columns: repeat(3, 33.33%);
   }
