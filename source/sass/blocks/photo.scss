@@ -34,6 +34,7 @@
 }
 
 .photo__like-icon {
+  opacity: 0.3;
   margin-right: 14px;
 }
 
@@ -143,5 +144,10 @@
 
   .photo__like-container {
     margin-top: 8px;
+  }
+
+  .photo__like-icon {
+    opacity: 1;
+    fill: #ffffff;
   }
 }
