@@ -53,11 +53,11 @@ const optimizeImages = () => {
 }
 
 const copyImages = () => {
-  return gulp.src('source/img/**/*.{png,jpg}')
+  return gulp.src('source/img/**/*.{png,jpg,webp}')
     .pipe(gulp.dest('build/img'))
 }
 
-WebP
+// WebP
 
 const createWebp = () => {
   return gulp.src('source/img/**/*.{png,jpg}')
