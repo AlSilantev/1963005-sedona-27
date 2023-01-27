@@ -4,7 +4,7 @@
   position: relative;
 
   display: flex;
-  padding: 16px 20px;
+  height: 56px;
 
   background-color: $additional-bg-color;
 
@@ -14,7 +14,6 @@
 @media (min-width: $tablet-width) {
   .main-header {
     width: 100%;
-    padding: 0;
     margin: auto;
   }
 }
