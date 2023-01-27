@@ -49,6 +49,12 @@
   }
 }
 
+.control__input {
+  &:focus + .control__mark {
+    outline: 3px #81b3d2 solid;
+  }
+}
+
 .control__input:checked + .control__mark {
   &--radio::before {
     $checked-mark-width: 16px;

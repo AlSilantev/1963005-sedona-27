@@ -281,6 +281,7 @@
     &--user-visited-places .feedback-form__input-container {
       box-sizing: border-box;
       display: flex;
+      flex-wrap: wrap;
       gap: 64px;
       width: 960px;
       padding: 31px 44px;

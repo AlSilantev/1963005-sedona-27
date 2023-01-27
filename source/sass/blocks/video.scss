@@ -23,7 +23,36 @@
   line-height: 21px;
 }
 
+.video__video-container {
+  position: relative;
+}
+
 .video__video {
+  display: block;
+}
+
+.video__play-button {
+  position: absolute;
+  top: calc(50% - 35px);
+  left: calc(50% - 32px);
+
+  padding: 8px;
+
+  border: none;
+  border-radius: 10px;
+  background-color: transparent;
+
+  &:focus {
+    outline: 3px #81b3d2 solid;
+    transform: scale(1.05);
+  }
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.video__play-button img {
   display: block;
 }
 

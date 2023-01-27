@@ -7,8 +7,9 @@
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/32.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
-    <link rel="preload" href="fonts/ptsans.woff2" as="font">
     <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preload" href="fonts/ptsans.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font" type="font/woff2">
     <title>HTML Academy: Седона</title>
   </head>
   <body>
@@ -123,9 +124,9 @@
                     Контактный телефон*:
                   </span>
 
-                  <div class="feedback-form__field-wrapper feedback-form__field-wrapper--phone">
+                  <span class="feedback-form__field-wrapper feedback-form__field-wrapper--phone">
                     <input class="feedback-form__field feedback-form__field--phone field" type="tel" name="user-tel-number" placeholder="Введите телефон" required>
-                  </div>
+                  </span>
                 </label>
 
                 <label class="feedback-form__field-label field-label">
@@ -133,9 +134,9 @@
                     Электронная почта*:
                   </span>
 
-                  <div class="feedback-form__field-wrapper feedback-form__field-wrapper--email">
+                  <span class="feedback-form__field-wrapper feedback-form__field-wrapper--email">
                     <input class="feedback-form__field feedback-form__field--email field" type="email" name="user-email" placeholder="Введите e-mail" required>
-                  </div>
+                  </span>
                 </label>
               </fieldset>
             </section>
@@ -231,7 +232,7 @@
         </section>
       </main>
 
-      <footer class="page__footer page-footer">
+      <footer class="page-footer">
         <span class="page-footer__hashtag-tagline">#visitsedona</span>
 
         <ul class="page-footer__social-list social-list clear-list">

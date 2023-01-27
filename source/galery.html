@@ -8,7 +8,8 @@
     <link rel="icon" href="img/favicons/32.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
     <link rel="manifest" href="manifest.webmanifest">
-    <link rel="preload" href="fonts/ptsans.woff2" as="font">
+    <link rel="preload" href="fonts/ptsans.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font" type="font/woff2">
     <title>HTML Academy: Седона</title>
   </head>
   <body>
@@ -105,11 +106,15 @@
                 </div>
               </div>
 
-              <picture>
-                <source media="(min-width: 1200px)" srcset="img/galery-nonnative-spaces-tablet.webp 1x, img/galery-nonnative-spaces-tablet@2x.webp 2x">
-                <source media="(min-width: 768px)" srcset="img/galery-nonnative-spaces-tablet.webp 1x, img/galery-nonnative-spaces-tablet@2x.webp 2x">
-                <img class="photo__photo" src="img/galery-nonnative-spaces.webp" srcset="img/galery-nonnative-spaces@2x.webp 2x" width="280" height="280" alt="Фото дороги, уходящей в горы.">
-              </picture>
+              <a href="#">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/galery-nonnative-spaces-desktop.webp 1x, img/galery-nonnative-spaces-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/galery-nonnative-spaces-tablet.webp 1x, img/galery-nonnative-spaces-tablet@2x.webp 2x">
+                  <source media="(min-width: 1200px)" srcset="img/galery-nonnative-spaces-desktop.jpg 1x, img/galery-nonnative-spaces-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/galery-nonnative-spaces-tablet.jpg 1x, img/galery-nonnative-spaces-tablet@2x.jpg 2x">
+                  <img class="photo__photo" src="img/galery-nonnative-spaces.jpg" srcset="img/galery-nonnative-spaces@2x.jpg 2x" width="280" height="280" alt="Фото дороги, уходящей в горы.">
+                </picture>
+              </a>
             </li>
 
             <li class="galery__item photo">
@@ -137,11 +142,15 @@
                 </div>
               </div>
 
-              <picture>
-                <source media="(min-width: 1200px)" srcset="img/galery-local-vegetation-tablet.webp 1x, img/galery-local-vegetation-tablet@2x.webp 2x">
-                <source media="(min-width: 768px)" srcset="img/galery-local-vegetation-tablet.webp 1x, img/galery-local-vegetation-tablet@2x.webp 2x">
-                <img class="photo__photo" src="img/galery-local-vegetation.webp" srcset="img/galery-local-vegetation@2x.jpg 2x" width="280" height="280" alt="Фото местной растительности.">
-              </picture>
+              <a href="#">
+                <picture>
+                  <source type="image/webp"  media="(min-width: 1200px)" srcset="img/galery-local-vegetation-desktop.webp 1x, img/galery-local-vegetation-desktop@2x.webp 2x">
+                  <source type="image/webp"  media="(min-width: 768px)" srcset="img/galery-local-vegetation-tablet.webp 1x, img/galery-local-vegetation-tablet@2x.webp 2x">
+                  <source media="(min-width: 1200px)" srcset="img/galery-local-vegetation-desktop.jpg 1x, img/galery-local-vegetation-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/galery-local-vegetation-tablet.jpg 1x, img/galery-local-vegetation-tablet@2x.jpg 2x">
+                  <img class="photo__photo" src="img/galery-local-vegetation.jpg" srcset="img/galery-local-vegetation@2x.jpg 2x" width="280" height="280" alt="Фото местной растительности.">
+                </picture>
+              </a>
             </li>
 
             <li class="galery__item photo">
@@ -169,11 +178,15 @@
                 </div>
               </div>
 
-              <picture>
-                <source media="(min-width: 1200px)" srcset="img/galery-road-to-the-north-tablet.webp 1x, img/galery-road-to-the-north-tablet@2x.webp 2x">
-                <source media="(min-width: 768px)" srcset="img/galery-road-to-the-north-tablet.webp 1x, img/galery-road-to-the-north-tablet@2x.webp 2x">
-                <img class="photo__photo" src="img/galery-road-to-the-north.webp" srcset="img/galery-road-to-the-north@2x.webp 2x" width="280" height="280" alt="Фото дороги-серпантина в горах.">
-              </picture>
+              <a href="#">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/galery-road-to-the-north-desktop.webp 1x, img/galery-road-to-the-north-desktop@2x.webp 2x">
+                  <source type="image/webp " media="(min-width: 768px)" srcset="img/galery-road-to-the-north-tablet.webp 1x, img/galery-road-to-the-north-tablet@2x.webp 2x">
+                  <source media="(min-width: 1200px)" srcset="img/galery-road-to-the-north-desktop.jpg 1x, img/galery-road-to-the-north-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/galery-road-to-the-north-tablet.jpg 1x, img/galery-road-to-the-north-tablet@2x.jpg 2x">
+                  <img class="photo__photo" src="img/galery-road-to-the-north.jpg" srcset="img/galery-road-to-the-north@2x.jpg 2x" width="280" height="280" alt="Фото дороги-серпантина в горах.">
+                </picture>
+              </a>
             </li>
 
             <li class="galery__item photo">
@@ -201,11 +214,15 @@
                 </div>
               </div>
 
-              <picture>
-                <source media="(min-width: 1200px)" srcset="img/galery-devils-bridge-tablet.webp 1x, img/galery-devils-bridge-tablet@2x.webp 2x">
-                <source media="(min-width: 768px)" srcset="img/galery-devils-bridge-tablet.webp 1x, img/galery-devils-bridge-tablet@2x.webp 2x">
-                <img class="photo__photo" src="img/galery-devils-bridge.webp" srcset="img/galery-devils-bridge@2x.webp 2x" width="280" height="280" alt="Фото Моста Дьявола.">
-              </picture>
+              <a href="#">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/galery-devils-bridge-desktop.webp 1x, img/galery-devils-bridge-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/galery-devils-bridge-tablet.webp 1x, img/galery-devils-bridge-tablet@2x.webp 2x">
+                  <source media="(min-width: 1200px)" srcset="img/galery-devils-bridge-desktop.jpg 1x, img/galery-devils-bridge-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/galery-devils-bridge-tablet.jpg 1x, img/galery-devils-bridge-tablet@2x.jpg 2x">
+                  <img class="photo__photo" src="img/galery-devils-bridge.jpg" srcset="img/galery-devils-bridge@2x.jpg 2x" width="280" height="280" alt="Фото Моста Дьявола.">
+                </picture>
+              </a>
             </li>
           </ul>
 
@@ -218,16 +235,22 @@
               Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
             </span>
 
-            <picture>
-              <source media="(min-width: 768px)" srcset="img/video-desktop.jpg">
-              <img class="video__video" src="img/video.jpg"  width="280" height="177" alt="Видеопрезентация.">
-            </picture>
+            <div class="video__video-container">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/video-desktop.jpg">
+                <img class="video__video" src="img/video-mobile.jpg"  width="280" height="177" alt="Видеопрезентация.">
+              </picture>
+
+              <button class="video__play-button" type="button" aria-label="Включить видеопрезентацию.">
+                <img src="img/play.png" width="48" height="54" alt="">
+              </button>
+            </div>
 
           </div>
         </section>
       </main>
 
-      <footer class="page__footer page-footer page-footer--galery">
+      <footer class="page-footer page-footer--galery">
         <span class="page-footer__hashtag-tagline">#visitsedona</span>
 
         <ul class="page-footer__social-list social-list clear-list">
