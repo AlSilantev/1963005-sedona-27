@@ -13,62 +13,6 @@
   justify-content: center;
 }
 
-@media (min-width: $tablet-width) {
-  .header-navigation {
-    width: 100%;
-    margin: 0;
-  }
-
-  .header-navigation__button {
-    display: none;
-  }
-
-  .header-navigation__list {
-    font-size: 14px;
-    line-height: 21px;
-    color: $secondary-font-color;
-
-    background-color: transparent;
-
-    justify-content: space-between;
-
-    &::after {
-      display: none;
-    }
-  }
-
-  .header-navigation__item {
-    display: flex;
-    width: 20%;
-
-    align-items: center;
-    justify-content: center;
-
-    &:nth-child(4n + 2) {
-      margin-right: 20%;
-    }
-  }
-
-  .header-navigation__link {
-    box-sizing: border-box;
-    width: 100%;
-
-    padding: 18px 0 17px;
-
-    &--current-page {
-      color: #766357;
-    }
-
-    &:hover {
-      color: #81b3d2;
-    }
-
-    &:active {
-      opacity: 0.3;
-    }
-  }
-}
-
 @media (max-width: calc($tablet-width - 1px)) {
   .header-navigation {
     position: relative;
@@ -124,6 +68,10 @@
 
     background-color: $main-button-bg-color;
 
+    &--closed {
+      display: none;
+    }
+
     &::after {
       position: absolute;
       left: 0;
@@ -162,6 +110,62 @@
 
     &:active {
       background-color: $main-button-bg-color-active;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .header-navigation {
+    width: 100%;
+    margin: 0;
+  }
+
+  .header-navigation__button {
+    display: none;
+  }
+
+  .header-navigation__list {
+    font-size: 14px;
+    line-height: 21px;
+    color: $secondary-font-color;
+
+    background-color: transparent;
+
+    justify-content: space-between;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .header-navigation__item {
+    display: flex;
+    width: 20%;
+
+    align-items: center;
+    justify-content: center;
+
+    &:nth-child(4n + 2) {
+      margin-right: 20%;
+    }
+  }
+
+  .header-navigation__link {
+    box-sizing: border-box;
+    width: 100%;
+
+    padding: 18px 0 17px;
+
+    &--current-page {
+      color: #766357;
+    }
+
+    &:hover {
+      color: #81b3d2;
+    }
+
+    &:active {
+      opacity: 0.3;
     }
   }
 }
