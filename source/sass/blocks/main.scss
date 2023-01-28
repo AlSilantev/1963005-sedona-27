@@ -91,7 +91,7 @@
   .main__background {
     margin-bottom: 20px;
 
-    background-image: url("../../img/back-desktop.jpg");
+    background-image: url("../../img/back-tablet.jpg");
 
     &--form {
       margin-bottom: 64px;
@@ -102,7 +102,7 @@
     }
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/back-desktop@2x.jpg");
+      background-image: url("../../img/back-tablet@2x.jpg");
     }
   }
 
@@ -165,6 +165,8 @@
   .main__background {
     margin-bottom: 32px;
 
+    background-image: url("../../img/back-desktop.jpg");
+
     &--form {
       height: 300px;
       margin-bottom: 115px;
@@ -172,6 +174,10 @@
 
     &--galery {
       margin-bottom: 100px;
+    }
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/back-desktop@2x.jpg");
     }
   }
 
